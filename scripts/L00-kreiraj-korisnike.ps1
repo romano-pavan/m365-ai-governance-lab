@@ -130,6 +130,13 @@ if (-not $Izvrsi) {
     return
 }
 
+# Potvrda prije promjena, kao kod terraform apply: prihvaca se samo tocno DA
+$odgovor = Read-Host "`nOvo mijenja tenant $Domena. Za nastavak upisi DA"
+if ($odgovor -cne 'DA') {
+    Write-Host 'Prekinuto. Nista nije promijenjeno.' -ForegroundColor Yellow
+    return
+}
+
 # ---------------------------------------------------------------------------
 # 4. Spajanje na Microsoft Graph
 # ---------------------------------------------------------------------------
@@ -224,7 +231,7 @@ if (-not $sku) {
     Get-MgSubscribedSku | Format-Table SkuPartNumber, CapabilityStatus, ConsumedUnits -AutoSize | Out-Host
     throw 'Ne nalazim aktivnu licencu SPB (Business Premium). Posalji mi tablicu iznad.'
 }
-Set-MgGroupLicense -GroupId $grpLicenca.Id -AddLicenses @(@{ SkuId = $sku.SkuId }) -RemoveLicenses @()
+$null = Set-MgGroupLicense -GroupId $grpLicenca.Id -AddLicenses @(@{ SkuId = $sku.SkuId }) -RemoveLicenses @()
 Write-Host "Licenca Business Premium dodijeljena grupi $($grpLicenca.DisplayName)." -ForegroundColor Green
 
 # ---------------------------------------------------------------------------

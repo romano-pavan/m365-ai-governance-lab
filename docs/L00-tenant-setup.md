@@ -28,6 +28,7 @@ Without `-Izvrsi` it only reads the CSV, validates it and prints the plan. It st
 
 With `-Izvrsi` it:
 
+1. asks you to type DA, in capitals, and stops without changes on any other answer,
 1. checks that the Microsoft Graph modules are installed,
 2. signs in with five delegated scopes and stops if the signed-in account belongs to a different tenant,
 3. creates the active employees, skipping any that already exist, with a 20-character temporary password that must be changed at first sign-in,
@@ -59,7 +60,7 @@ The third trial has 25 licences and is set to continue with one paid licence on 
 
 - Two FIDO2 security keys, one for `bg-01` and one for `adm-romano`. Until then the break-glass account has no phishing-resistant sign-in method, which is an accepted risk.
 - Rename the admin account's display name to "Romano Pavan (admin)" so that audit entries such as "Created by" are unambiguous.
-- Two small fixes to the script: suppress the output of `Set-MgGroupLicense` and ask for confirmation before execution.
+
 
 ## CISSP concepts
 
