@@ -1,0 +1,16 @@
+﻿Ime;Prezime;Radno mjesto;Odjel;Lokacija;Nadređeni;Datum zaposlenja;Datum odlaska;Službeni mobitel
+Goran;Vidović;Predsjednik uprave;Uprava;Zagreb;;2011-03-01;;Da
+Dario;Novak;Regionalni IT voditelj;IT;Zagreb;Goran Vidović;2015-09-14;;Da
+Romano;Pavan;Voditelj AI rješenja i sigurnosti;IT;Zagreb;Dario Novak;2026-10-15;;Da
+Tomislav;Barić;Direktor prodaje;Prodaja;Zagreb;Goran Vidović;2014-02-03;;Da
+Luka;Perić;Prodajni savjetnik;Prodaja;Zagreb;Tomislav Barić;2023-05-02;;Da
+Nina;Babić;Referentica prodaje;Prodaja;Zagreb;Tomislav Barić;2021-01-11;;Da
+Petra;Golob;Voditeljica prodaje za Sloveniju;Prodaja;Ljubljana;Tomislav Barić;2019-06-17;;Da
+Mirela;Kovač;Voditeljica after-salesa;After-sales;Zagreb;Goran Vidović;2016-04-04;;Da
+Marko;Jurišić;Jamstveni referent;After-sales;Zagreb;Mirela Kovač;2020-10-05;;Ne
+Zoran;Petrović;Skladišni referent;Logistika;Zagreb;Mirela Kovač;2009-06-01;2026-09-30;Da
+Ana;Šimić;Voditeljica marketinga;Marketing;Zagreb;Goran Vidović;2018-08-20;;Da
+Jure;Matić;Marketinški specijalist;Marketing;Zagreb;Ana Šimić;2022-03-07;;Da
+Lea;Knežević;Financijska analitičarka;Financije;Zagreb;Goran Vidović;2017-11-13;;Da
+Ivana;Horvat;Direktorica ljudskih resursa;Ljudski resursi;Zagreb;Goran Vidović;2012-05-21;;Da
+Sanja;Zupan;Voditeljica korisničke službe;Korisnička služba;Ljubljana;Mirela Kovač;2018-02-05;;Da

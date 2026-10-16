@@ -1,0 +1,12 @@
+DisplayName,InternalName,Type,Required,Choices,Purpose
+Rješenje,Title,Single line of text,Yes,,The tool or solution
+Svrha,Svrha,Multiple lines of text,Yes,,What it does and for which work
+Status,Status,Choice,Yes,"Odobreno; U procjeni; Zabranjeno; Zatečeno bez odobrenja",Approved / under review / banned / found without approval; default U procjeni
+Poslovni vlasnik,PoslovniVlasnik,Person,Yes,,Data owner accountable for the use
+Tehnički vlasnik,TehnickiVlasnik,Person,No,,Custodian; empty means IT has no control over the tool
+Najviša klasa podataka,KlasaPodataka,Choice,Yes,"Javno; Interno; Povjerljivo; Strogo povjerljivo",Most sensitive data the tool may process
+Dobavljač,Dobavljac,Single line of text,Yes,,Supplier
+DPA potpisan,DPA,Yes/No,No,,Data processing agreement exists; default No
+Rizik,Rizik,Choice,Yes,"Nisko; Srednje; Visoko",Low / medium / high
+Uvjeti,Uvjeti,Multiple lines of text,No,,Conditions of approval
+Datum revizije,DatumRevizije,Date only,Yes,,Next review date

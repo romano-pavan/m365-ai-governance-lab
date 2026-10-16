@@ -1,0 +1,19 @@
+# Generated credentials. Never commit these, even by accident.
+*privremene_lozinke*
+*firefox_import*
+*lozinke*.csv
+*password*.csv
+
+# Keys, certificates and environment files
+*.pfx
+*.pem
+*.key
+.env
+.env.*
+secrets/
+
+# Editor and OS files
+.vscode/
+Thumbs.db
+desktop.ini
+.DS_Store
