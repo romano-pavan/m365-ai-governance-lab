@@ -51,7 +51,7 @@ Install-Module Microsoft.Graph.Authentication, Microsoft.Graph.Users, Microsoft.
 # Plan only: reads the CSV, validates it and prints what would change. Connects to nothing.
 .\scripts\L00-kreiraj-korisnike.ps1 -CsvPath .\data\zaposlenici_adria_motori.csv -Domena yourtenant.onmicrosoft.com
 
-# Execute: signs in with delegated scopes and applies the plan. Existing users and groups are skipped.
+# Execute: asks you to type DA, then signs in with delegated scopes and applies the plan. Existing users and groups are skipped.
 .\scripts\L00-kreiraj-korisnike.ps1 -CsvPath .\data\zaposlenici_adria_motori.csv -Domena yourtenant.onmicrosoft.com -Izvrsi
 ```
 
