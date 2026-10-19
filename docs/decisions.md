@@ -37,3 +37,15 @@ Flex routing, Anthropic models in Microsoft 365 apps and OpenAI as a subprocesso
 ## D-009 SharePoint and OneDrive label processing stays on (L01)
 
 It was switched on by accident. With no label published it changes nothing for users, and a later ticket needs it. Turning it off later would stop co-authoring and search for files encrypted by a label from then on and leave a mixed state that is hard to support, so it stays on and is logged as an unplanned change.
+
+## D-010 Phishing-resistant MFA for admins waits for hardware keys (L02)
+
+CA003 stays in report-only. A passkey in Microsoft Authenticator is registered for `adm-romano`, but sign-in with it fails, and the cause was not found within the time set aside for it. Two FIDO2 keys solve this and the emergency account's weakness at the same time. Until they arrive, `adm-romano`, `bg-01` and my daily account all rely on Authenticator on one phone, so losing the phone means losing the emergency account as well. Accepted for a lab tenant with fictional data. Revisit when the keys arrive, or before any real data enters the tenant.
+
+## D-011 Microsoft's security defaults replacement policies are turned off (L02)
+
+Turning off security defaults created four Microsoft policies, already on: Block legacy authentication, and MFA for Azure management, for admins and for all users. They duplicate CA001 and CA002 and know nothing about my exclusion groups, so the temporary exception in CA002 did not work while they were on. Microsoft-managed policies cannot be deleted, so all four are set to Off. One policy for one job: when CA002 changes, the effect changes. Revisit if Microsoft adds a policy that none of mine covers.
+
+## D-012 A new employee's first MFA method comes from a Temporary Access Pass (L02)
+
+Registering security information requires MFA (CA005), so a password alone is never enough to register a method. IT verifies who the person is and issues a pass that lasts one hour and works once. Without this, whoever first signs in with a new employee's initial password could register their own phone as that employee's second factor. Revisit if onboarding moves to a process where HR verifies identity.

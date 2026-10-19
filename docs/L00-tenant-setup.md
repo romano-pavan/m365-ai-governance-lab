@@ -58,8 +58,8 @@ The third trial has 25 licences and is set to continue with one paid licence on 
 
 ## Open items
 
-- Two FIDO2 security keys, one for `bg-01` and one for `adm-romano`. Until then the break-glass account has no phishing-resistant sign-in method, which is an accepted risk.
-- Rename the admin account's display name to "Romano Pavan (admin)" so that audit entries such as "Created by" are unambiguous.
+- Two FIDO2 security keys, one for `bg-01` and one for `adm-romano`. Until then the break-glass account has no phishing-resistant sign-in method, which is an accepted risk. Carried over to L02 (decision D-010).
+- Done: the admin account's display name is now "Romano Pavan (admin)", so audit entries show which account made a change.
 
 
 ## CISSP concepts
